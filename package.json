@@ -1,5 +1,5 @@
 {
-  "name": "palathea",
+  "name": "@abnazhor/palathea",
   "version": "0.0.1",
   "description": "Simple assistant for daily tasks. Written in Node.js",
   "main": "src/index.js",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/abnazhor/Palathea#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/abnazhor"
+    "registry": "https://npm.pkg.github.com/r"
   }
 }
