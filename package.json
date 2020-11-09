@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/abnazhor/Palathea#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@abnazhor"
+    "registry": "https://npm.pkg.github.com/abnazhor"
   }
 }
