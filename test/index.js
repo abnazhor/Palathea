@@ -1,0 +1,1 @@
+import Assistant from "../src/index.js";

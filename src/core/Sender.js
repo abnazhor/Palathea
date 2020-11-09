@@ -1,4 +1,4 @@
-export default class Sender {
+module.exports = class Sender {
   constructor(handlers) {
     this.handlers = handlers;
   }

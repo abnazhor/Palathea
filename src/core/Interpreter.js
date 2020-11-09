@@ -1,4 +1,4 @@
-export default class Interpreter {
+module.exports = class Interpreter {
   constructor(intents, dictionary, acceptanceRating) {
     this.intents = intents;
     this.acceptanceRating = acceptanceRating;

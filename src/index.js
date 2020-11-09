@@ -1,12 +1,16 @@
-import Sender from "./modules/Sender.js";
-import Listener from "./modules/Listener.js";
-import Interpreter from "./modules/Interpreter.js";
+const Sender = "./core/Sender.js";
+const Listener = "./core/Listener.js";
+const Interpreter = "./core/Interpreter.js";
 
-export default class Assistant {
-    constructor(intents, dictionary) {
+module.exports = class Palathea {
+    constructor(intents, dictionary, handlers) {
         this.intents = intents;
         this.dictionary = dictionary;
         this.handlers = handlers;
+
+        if(!this.intents || !this.dictionary || !this.handlers) {
+            throw new Error("Intents, dictionary and handlers must be declared.");
+        }
 
         this.listener = new Listener();
         this.sender = new Sender(this.handlers);

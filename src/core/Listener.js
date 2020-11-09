@@ -1,6 +1,5 @@
-import stringUtil from "../../utils/string.js";
-
-export default class Listener {
+const stringUtil = "../utils/string.js";
+module.exports = class Listener {
     sanitize(input) {
         const fixedInput = input.toString().toLowerCase();
         const replacedInput = stringUtil.allReplace(fixedInput).replace(/[\?\!\,\.]/g, "");

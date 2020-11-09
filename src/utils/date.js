@@ -1,4 +1,4 @@
-export default {
+module.exports =  {
     /**
      * @param {Date} date
      * @param {Integer} days
