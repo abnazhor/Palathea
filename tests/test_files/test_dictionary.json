@@ -1,0 +1,50 @@
+[
+    {
+        "id": "colours",
+        "pattern": [
+            "rojo",
+            "gris",
+            "azul",
+            "verde",
+            "negro",
+            "blanco",
+            "naranja",
+            "amarillo"
+        ]
+    },
+    {
+        "id": "dates",
+        "pattern": [
+            "\\d{2}\\/d{2}\\/\\d{4}",
+            "\\d{1,2} de [a-zA-Z]+"
+        ]
+    },
+    {
+        "id": "personNames",
+        "pattern": [
+            "ana",
+            "jorge",
+            "marta",
+            "andrea",
+            "luis",
+            "guillermo",
+            "jose",
+            "marisa",
+            "daniel",
+            "dani",
+            "antonio",
+            "manuel",
+            "clara",
+            "jesus",
+            "pepa",
+            "maria jose",
+            "maria",
+            "alfonso",
+            "pablo",
+            "javier",
+            "pedro",
+            "juan",
+            "juan carlos"
+        ]
+    }
+]

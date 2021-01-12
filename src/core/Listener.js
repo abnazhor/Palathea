@@ -1,4 +1,4 @@
-const stringUtil = "../utils/string.js";
+const stringUtil = require("../utils/string.js");
 module.exports = class Listener {
     sanitize(input) {
         const fixedInput = input.toString().toLowerCase();

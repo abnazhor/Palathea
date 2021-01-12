@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "keywords": [
+            [
+                "hello"
+            ]
+        ],
+        "strict": false,
+        "type": "String",
+        "response": "Hello!"
+    },
+    {
+        "id": 2,
+        "keywords": [
+            [
+                "what",
+                "date",
+                "is",
+                "it"
+            ]
+        ],
+        "strict": false,
+        "type": "String",
+        "handler": "checkDateHandler"
+    },
+    {
+        "id": 999,
+        "keywords": [
+            [
+                "what",
+                "day",
+                "is",
+                "it"
+            ]
+        ],
+        "strict": false,
+        "type": "String",
+        "handler": "testHandler"
+    }
+]
