@@ -1,6 +1,6 @@
-const Sender = "./core/Sender.js";
-const Listener = "./core/Listener.js";
-const Interpreter = "./core/Interpreter.js";
+const Sender = require("./core/Sender.js");
+const Listener = require("./core/Listener.js");
+const Interpreter = require("./core/Interpreter.js");
 
 module.exports = class Palathea {
     constructor(intents, dictionary, handlers) {
