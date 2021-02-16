@@ -25,7 +25,7 @@ test("Test basic handler response with changes and punctuation signs", async () 
 
 test("Test response handling when there is no available response", async () => {
     const palathea = new Assistant(intents, dictionary, handlers);
-    expect(typeof palathea.reply("922 283822 123hh i122")).toThrow("string");
+    expect(await palathea.reply("922 283822 123hh i122")).toBe("Lo siento, creo que no lo he entendido, ¿Podrías repetirlo?");
 });
 
 test("Test basic handler response with changes and punctuation signs", async () => {

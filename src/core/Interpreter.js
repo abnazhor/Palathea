@@ -21,15 +21,20 @@ module.exports = class Interpreter {
     )[0];
 
     let resultantContext = [];
+    let result;
 
-    if (selectedIntent.intent.context) {
-      resultantContext = this.context(selectedIntent.intent, input);
-    }
+    try {
+      if (selectedIntent.intent.context) {
+        resultantContext = this.context(selectedIntent.intent, input);
+      }
 
-    const result = {
-      intent: selectedIntent.intent,
-      rating: selectedIntent.rating,
-      context: resultantContext
+      result = {
+        intent: selectedIntent.intent,
+        rating: selectedIntent.rating,
+        context: resultantContext
+      }
+    } catch (err) {
+      result = {};
     }
 
     return !result.intent ? failedIntent : result;
